@@ -39,7 +39,8 @@ class PokeAnnotation: NSObject, MKAnnotation {
             print(err.description)
         }
         
-        self.pokemonName =  (pokemon[pokemonNumber] as Pokemon).name.capitalized
+        // pokemon array is zero-based, so subtract one from the actual id to get the name
+        self.pokemonName =  (pokemon[pokemonNumber - 1] as Pokemon).name.capitalized
         self.title = self.pokemonName
     }
 }

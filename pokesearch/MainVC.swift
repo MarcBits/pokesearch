@@ -220,7 +220,7 @@ private extension MainVC {
         let loc = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
         
         // debug
-        print("Selected pokemon: \(pokeName!.capitalized)")
+        print("Selected pokemon: \(pokeName!.capitalized) (\(presentedPoke.pokedexId))")
         print("Will be placed here: lat> \(mapView.centerCoordinate.latitude) long> \(mapView.centerCoordinate.longitude)")
         //--
         

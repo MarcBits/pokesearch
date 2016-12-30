@@ -106,7 +106,7 @@ class PokeSelectionVC: UIViewController, UICollectionViewDelegate,
         return CGSize(width: 105, height: 105)
     }
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         view.endEditing(true)
     }
